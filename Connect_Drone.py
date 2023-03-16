@@ -19,14 +19,14 @@ from dronekit import *
    This IP address is based on given ZeroTier IP address'''
 #connection_string = '192.168.195.204:14551'
 #connection_string = '192.168.195.204:14553'
-#connection_string = '192.168.195.190:14553'
+connection_string = '192.168.8.141:14553'
 
 '''Using Uart Serial Rx->Tx and Tx-Rx connection'''
 # For Jetson Nano
 #connection_string = '/dev/ttyTHS1,921600'
 
 # For RPI
-connection_string = '/dev/ttyAMA0,921600'
+#connection_string = '/dev/ttyAMA0,921600'
 
 ''' Using USB Connection '''
 #connection_string = '/dev/ttyACM0'
