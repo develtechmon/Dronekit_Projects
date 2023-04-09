@@ -26,6 +26,27 @@ connection_string = '192.168.8.141:14553'
 #connection_string = '/dev/ttyTHS1,921600'
 
 # For RPI
+'''
+
+Note Here - Default Serialn_Baud rate = 57. For below config, set SERIALn_BAUD rate = 921
+Please use below setting for different Telemetry Port.
+
+Telemetry 1 (Serial1)
+SERIAL1_BAUD = 921
+SERIAL1_PROTOCOL = 1 (Mavlink)
+
+then run below command
+mavproxy.py --master=/dev/ttyAMAO,921600
+
+Telemetry 2 (Serial2)
+SERIAL2_BAUD = 57
+SERIAL2_PROTOCOL = 1 (Mavlink)
+
+then run below command
+mavproxy.py --master=/dev/ttyAMA0 or
+mavproxy.py --master=/dev/ttyAMA0,57600
+
+'''
 #connection_string = '/dev/ttyAMA0,921600'
 
 ''' Using USB Connection '''
