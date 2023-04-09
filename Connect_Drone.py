@@ -25,8 +25,8 @@ connection_string = '192.168.8.141:14553'
 # For Jetson Nano
 #connection_string = '/dev/ttyTHS1,921600'
 
-# For RPI
 '''
+# For RPI
 
 Note Here - Default Serialn_Baud rate = 57. For below config, set SERIALn_BAUD rate = 921
 Please use below setting for different Telemetry Port.
