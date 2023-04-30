@@ -15,13 +15,13 @@ class ReadKeyboard:
             #self.connection_string = '/dev/ttyAMA0,921600'
 
             '''Gazebo'''
-            #self.connection_string = '192.168.8.146:14553'
+            self.connection_string = '192.168.8.140:14553'
 
             '''SiTL'''
             #self.connection_string = '127.0.0.1:14550'
 
             '''ZeroTier'''
-            self.connection_string = '192.168.8.141:14553'
+            #self.connection_string = '192.168.8.141:14553'
 
             self.buzzer  = Buzzer(23)
             self.vehicle = connect(self.connection_string, wait_ready=True)

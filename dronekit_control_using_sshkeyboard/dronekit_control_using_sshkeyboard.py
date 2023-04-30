@@ -265,7 +265,9 @@ def main():
     global vehicle
 
     # Connecting the Vehicle
-    vehicle = connect('udpin:127.0.0.1:14551', baud=115200)
+    #vehicle = connect('udpin:127.0.0.1:14551', baud=115200)
+    vehicle = connect('192.168.8.140:14553')
+
     print("Vehicle Connected !")
 
     # Setting the Heading angle constant throughout flight

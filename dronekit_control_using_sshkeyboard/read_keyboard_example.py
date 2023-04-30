@@ -1,3 +1,8 @@
+'''
+To install
+pip install sshkeyboard
+'''
+
 from sshkeyboard import listen_keyboard
 
 def press(key):
