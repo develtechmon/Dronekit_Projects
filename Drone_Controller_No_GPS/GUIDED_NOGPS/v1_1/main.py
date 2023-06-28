@@ -4,11 +4,9 @@ import keyboard as kp
 class guided_no_gps:
     def __init__(self):
         self.copter = Tower()
-        self.copter.USB = "127.0.0.1:14551"
+        self.copter.SIMULATOR = '192.168.8.146:14553'
         self.copter.BAUDRATE = 115200
         self.copter.initialize()
-        print("Copter Initialized !")
-
         self.vehicle = StandardAttitudes()
 
         self.mode_t = 0
