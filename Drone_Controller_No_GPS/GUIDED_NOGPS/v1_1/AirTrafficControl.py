@@ -120,10 +120,12 @@ class Tower(object):
       if(should_write_to_file):
         self.flight_log = open('flight_log.txt', 'w')
         sys.stdout = self.flight_log
+      
+      print("\n Connecting to Simulator Gazebo..")
+      self.vehicle = dronekit.connect(self.SIMULATOR, wait_ready=True)
 
-      print("\nConnecting via USB to PixHawk...")
-	    #Add baud_rate parameter
-      self.vehicle = dronekit.connect(self.USB, baud = self.BAUDRATE, wait_ready=True)
+      #print("\nConnecting via USB to PixHawk...")
+      #self.vehicle = dronekit.connect(self.USB, baud = self.BAUDRATE, wait_ready=True)
 
       if not self.vehicle:
         print("\nUnable to connect to vehicle.")
