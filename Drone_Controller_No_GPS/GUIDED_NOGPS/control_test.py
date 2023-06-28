@@ -11,10 +11,10 @@ MyCopter.BAUDRATE = 115200
 #Establish connection, start failsafe and switch to GUIDED_NOGPS
 MyCopter.initialize()
 
-tmp_inp = ''
-print 'Copter initialized. Enter to arm the drone.'
+#tmp_inp = ''
+print ("Copter initialized. Enter to arm the drone")
 
-tmp_inp = raw_input()
+#tmp_inp = raw_input()
 
 MyCopter.takeoff(15)
 
