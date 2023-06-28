@@ -122,7 +122,7 @@ class Tower(object):
         sys.stdout = self.flight_log
 
       print("\nConnecting via USB to PixHawk...")
-	  #Add baud_rate parameter
+	    #Add baud_rate parameter
       self.vehicle = dronekit.connect(self.USB, baud = self.BAUDRATE, wait_ready=True)
 
       if not self.vehicle:
